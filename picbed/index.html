@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>聚合图床 By CYF</title>
+    <meta name="description" content="免费新浪微博图床，多合一图床，聚合图床，支持批量上传的图床，免注册免登陆。">
+    <meta name="keywords" content="新浪图床,微博图片外链,急速CDN图床,免费图片外链,聚合图床,多合一图床">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 页面通用自定义css文件 -->
+    <link rel="stylesheet" href="style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+    <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<style>
+#toUploaded {
+    width: 100%;
+    height: 260px;
+    width: 100%;
+    background: #eee;
+    background: rgba(238, 238, 238, 0.6);
+    color: #4a4a4a;
+    border: 3px dashed #a2a1a1;
+    outline: none;
+}
+#toUploaded:hover {
+    border-color: #616161;
+}
+
+#output {
+    /*max-width: 500px;*/
+    height: 200px;
+    margin: 0 auto;
+    word-wrap:normal;
+}
+</style>
+<!--取消原先的百度统计代码
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c562f0e38ac2c74634880e5fa9ce4f1d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+-->
+</head> 
+<body>
+<p style="background:#E7E6E6"><font size=72><a style="text-decoration:none" href="/"><<回到主页</a></font></p>
+<div id="particles"><canvas class="pg-canvas" width="1903" height="946"></canvas></div>
+<div class="container nav-main">
+<h1 class="web-title"><a href="https://tools.cyfan.ga/picbed/" target="_blank">多合一图床</a><small>新浪图床，搜狗图床，搜狐图床，SMMS图床</small></h1>
+</div><!--<div class="container">-->
+<div class="container">
+<div class="panel panel-default">
+    <div class="panel-heading"><a href="https://tools.cyfan.ga/picbed/" target="_blank">聚合图床</a> - 新浪图床，搜狗图床，搜狐图床，SMMS图床</div>
+    <div class="panel-body tuchuang-main">
+        <form enctype="multipart/form-data" id="tuchuang-form" onsubmit="return false;">
+            <button type="button" onclick="file.click();" class="btn btn-default" id="toUploaded"><span class="glyphicon glyphicon-cloud-upload"></span> 拖拽或选择您的图片到这里(ﾉﾟ▽ﾟ)ﾉ</button>
+            <input type="file" name="file" id="file" style="display:none" accept="image/*" multiple="multiple">
+            <div class="form-group">
+                <div class="radio">
+                    上传到(图片越大上传越慢，耐心等待)：
+                    <label class="radio-inline"><input name="type" type="radio" value="Sina" checked=""> 新浪 </label>
+                   <!-- <label class="radio-inline"><input name="type" type="radio" value="Baidu"> 百度 </label>-->
+                    <label class="radio-inline"><input name="type" type="radio" value="Sougou"> 搜狗 </label>
+                    <label class="radio-inline"><input name="type" type="radio" value="Sohu"> 搜狐 </label>
+                   <!-- <label class="radio-inline"><input name="type" type="radio" value="OoXx"> OoXx </label>-->
+                    <label class="radio-inline"><input name="type" type="radio" value="SMMS"> SMMS </label>
+                    <label class="radio-inline"><input name="type" type="radio" value="Vim"> Vim </label>
+                    <!--<label class="radio-inline"><input name="type" type="radio" value="Mixtape"> Mixtape </label>-->
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn btn-primary" onclick="doUpload();return false;" style="margin: 15px auto">
+                    <span class="glyphicon glyphicon-cloud-upload"></span> 
+                    开始上传
+                
+				</button>
+            </div>
+            <textarea id="output" class="form-control" placeholder="请先选择图片上传"></textarea>
+        </form>
+    </div>
+</div>
+<script>
+$(function () {
+    $("#toUploaded").html("<span class='glyphicon glyphicon-cloud-upload'></span> 拖拽或选择您的图片到这里(ﾉﾟ▽ﾟ)ﾉ");
+    
+    $('input[name="file"]').change(function (event) {
+        var filePaths = $(this)[0].files;
+        
+        if (filePaths.length > 20) {
+            alert("别贪心，一次最多选择20张图片喔ヾ(=･ω･=)o");
+            $("#tuchuang-form")[0].reset();
+            return;
+        }
+        
+        $("#toUploaded").html("<span class='glyphicon glyphicon-check'></span> 您选择了 " + filePaths.length + " 个文件(/≧▽≦)/~")
+    })
+});
+
+function doUpload() {
+    var formData = new FormData();
+    var files = $("#file")[0].files;
+    if (files.length == 0) {
+        alert("请选择文件后再上传！");
+        return;
+    }
+    
+    var flag = 0;
+    for (var i = 0; i < files.length; i++) {
+        formData.append("fileupload", files[i]);
+        $("#toUploaded").html("<span style='color: green;'>努力上传中，请稍候...</span>");
+        
+        var type = $('input:radio[name="type"]:checked').val();
+        
+        $.ajax({
+            url: "https://img.yyhy.me/upload.php?type=" + type,
+            type: "post",
+            data: formData,
+            cache: false,
+            processData: false,
+            contentType: false,
+            async: true,
+            dataType: "json",
+            success: function (data) {
+                if (++flag == files.length) {
+                    $("#toUploaded").html("<span class='glyphicon glyphicon-cloud-upload'></span> 上传完成！您可以继续选择图片上传(ﾉﾟ▽ﾟ)ﾉ");
+                }
+                
+                $("#output").val($("#output").val() + data.msg + "\n");
+                $("#output").scrollTop($("#output")[0].scrollHeight);
+                
+                // if (data.code == 0) {
+                //     $("#output").val($("#output").val() + "\n" + data.msg);
+                // } else {
+                //     layer.close(ii);
+                //     layer.alert(data.msg, {
+                //         closeBtn: 0,
+                //         maxWidth: 320,
+                //         title: "温馨提示 ♪(･ω･)ﾉ",
+                //         btn: ["知道了"]
+                //     })
+                // }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert('图片上传失败 - ' + XMLHttpRequest.status);
+                console.error(XMLHttpRequest + textStatus + errorThrown);
+            }
+        })
+    }
+};
+
+</script>
+<div class="panel panel-default">
+    <div class="panel-heading">工具简介</div>
+    <div class="panel-body">
+      <p>新浪图床——图片尺寸可供选择:square、thumb150、orj360、orj480、mw690、mw1024、mw2048、small、bmiddle、large 默认为:large,请自行替换</p>
+        <p>本站API采用<a href="https://img.yyhy.me">烟雨图床〃'▽'〃</a>无偿贡献,本站未进行本地化</p>
+		<p>本站外壳抄自<a href="http://bitu.net">bitu.net</a>,在这里申明不是因为版权,而是怕引起某些人误会,因为我在<a href="http://tool.mkblog.cn/tuchuang/">孟坤图床</a>惊奇的发现UI相似(都不知道谁抄谁的),但后来发现MK的核心JS没有混淆,而bitu混淆了,怀疑是bitu抄mk的.啊,乱死了,不管了!</p>
+		<p>新浪图床——前缀 WS数字 替换成 tva1 可以完美外链！</p>
+        <p>聚合图床——无限空间、无限流量、无限数量！</p>
+        <p>注意：除新浪及 SMMS 图床外，其它的图床外链都有时间限制！</p>
+        <p>注意：所有上传的图片都是公开的，且一经上传，无法删除！请不要上传私密图片！</p>
+		<p>百度、OoXx、Mixtape图床由于其API本身缺陷，不提供对外开放</p>
+		</div>
+</div>
+</div><!--class="container"中部容器-->
+<footer class="footer text-center">
+	<div>
+		Copyright 2019 <a href="https://cyfan.ga" target="_blank">CYF</a>
+	</div>
+	<!--
+</body></html>
