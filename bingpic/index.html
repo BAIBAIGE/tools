@@ -1,14 +1,11 @@
-<script language="javascript">
-            if (window.screen)
-            {
-                var m_height=screen.weight;
-                m="m/";
-                d="d.html";
-                if (m_height >= 800) {
-                    self.location.replace(c);
-                        }
-                        else{
-                    self.location.replace(d);
-                }
-            }
-    </script>
+<script type="text/javascript">
+    (function() {
+        var sUserAgent = navigator.userAgent;
+        if (sUserAgent.indexOf('Android') > -1 || sUserAgent.indexOf('iPhone') > -1 || sUserAgent.indexOf('iPad') > -1 || sUserAgent.indexOf('iPod') > -1 || sUserAgent.indexOf('Symbian') > -1) {
+
+            location.href = 'm/';
+        } else {
+            location.href = 'd.html';
+        }
+    })();
+</script>
