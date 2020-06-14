@@ -37,7 +37,7 @@ function Send(news) {
 
 	}
 
-	var url = "http://www.tuling123.com/openapi/api?key=c9524b5b62fe4f97a9dd61fd878669f0";
+	var url = "https://www.tuling123.com/openapi/api?key=c9524b5b62fe4f97a9dd61fd878669f0";
 
 	url = url + "&info=" + news;
 
