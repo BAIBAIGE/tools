@@ -289,8 +289,7 @@ var egret;
                     e.ctx.decodeAudioData(t.buffer, function(r) {
                         t.self.audioBuffer = r, t.success && t.success(), e.isDecoding = !1, e.decodeAudios()
                     }, function() {
-                        alert("sound decode error: " + t.url + "！\nsee http://edn.egret.com/cn/docs/page/156"), t.fail && t.fail(), e.isDecoding = !1, e.decodeAudios()
-                    })
+                        })
                 }
             }, e
         }();
