@@ -5,14 +5,14 @@
 <title>HTML5可视化音频动画特效 </title>
  <meta name="description" content="HTML5可视化音频动画特效" />
  
-<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/chenyfan/cdn/assets/radio/css/css.css">
 
 </head>
 <body>
 
 <div id="menu">
   <a id="btStartAudioVisualization" class="bt">启动音频可视化</a>
-  <input id="btLoadAudio" type="file" accept="audio/*"><label id="labelLoadAudio" for="btLoadAudio" class="bt">加载音频</label>
+  <input id="btLoadAudio" type="file" accept="https://cdn.jsdelivr.net/gh/chenyfan/cdn/assets/radio/audio/*"><label id="labelLoadAudio" for="btLoadAudio" class="bt">加载音频</label>
 </div>
 
 <p id="txtStatus"></p>
@@ -187,7 +187,7 @@ function userStart() {
   
   txtStatus.innerHTML = '加载中...';
 
-  audioSetup( 'audio/Play.mp3' );
+  audioSetup( 'https://cdn.jsdelivr.net/gh/chenyfan/cdn/assets/radio/audio/Play.mp3' );
   animate();
 
 };
