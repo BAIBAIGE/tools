@@ -1,683 +1,332 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <meta name="author" content="CYF">
-    <meta name="generator" content="Github">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-	<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/apple-touch-icon-next.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/favicon-32x32-next.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/favicon-16x16-next.png">
-    <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/logo.svg" color="#222">
-    <meta name="description" content="TOOLS.cyfan.top">
-    <meta name="keywords" content="在线工具">
-    
-    <title>陈YF的工具箱</title>
-    
-    <!-- 不支持IE8及以下版本浏览器 -->
-    <!--[if lte IE 8]>
-   
-    <![endif]--> 
-    
-    <!-- font-awesome 图标字体 -->
-   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- 实验室核心样式文件 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/css/index.css">
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TOOLS.cyfan.top">
+<meta name="keywords" content="在线工具">
+<title>陈YF的工具箱</title>
 
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cyf/css/default.css">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/apple-touch-icon-next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/favicon-32x32-next.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/favicon-16x16-next.png">
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/logo.svg" color="#222">
+	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf/css/animate.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/gh/driftyco/ionicons@2.0.0/css/ionicons.min.css'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/cyf/css/app.css'>
+	<style>
+	.mhn-ui-wrap {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  background-color: rgba(255, 255, 255, .2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+.back1 {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  background-color: #fff !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-position: center 0 !important;
+}
+	</style>
 </head>
 <body>
-
-
-<header class="header" id="bj" style="background-color: black; height: 600px;">
-    <!-- 动画展示区域 -->
-    <!-- <div id="victor-container"><div id="victor-output"></div></div> -->
-    
-    <div class="welcome">
-        <p>— 欢迎访问 —</p>
-        <img class="web-title" src="logo.png" alt="CYF">
-    </div>
-    
-    <!--向下滚动提示-->
-    <a class="scroll-down-tips" href="#product" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(&#39;.header&#39;).height()}, &#39;500&#39;);return false;">
-        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-        向下滚动
-    </a>
-<canvas class="particles-js-canvas-el" width="1349" height="876" style="width: 100%; height: 100%;"></canvas></header>     <!-- header -->
-
-<div class="container">
-
-<section class="section">
-
-<a name="product"></a>
-<h3 class="mk-sub-title">
-    <span>Product</span>
-    <span>/</span>
-    我们的工具
-</h3>
-
-<p class="mk-title-describe">有的是原创，有的当然是抄的了-0-</p>
-
-<div class="mk-item-box">
-     <!-- mk-item -->
-<div class="mk-item">
-	    <a href="https://api.cyfan.top/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color6">
-	            <div class="item-logo">
-	                <i class="fa fa-binoculars" aria-hidden="true"></i>
-	            </div>
-	            <h3>API&TOS</h3>
-	            <p>本站所有API调用方式与许可</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	
-	<div class="mk-item">
-	    <a href="https://picbed.cyfan.top/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color1">
-	            <div class="item-logo">
-	                <i class="fa fa-bed" aria-hidden="true"></i>
-	            </div>
-	            <h3>图的床</h3>
-	            <p>不言而喻的作用</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	
-	
-	<div class="mk-item">
-	    <a href="https://tester.cyfan.top/MagicMusic/" target="_blank" se_prerender_url="complete">
-	       	<article class="mk-color-item color2">
-	            <div class="item-logo">
-	                <i class="fa fa-music" aria-hidden="true"></i>
-					<i class="fa fa-dollar" aria-hidden="true"></i>
-	            </div>
-	            <h3><del>音乐免费听<del></h3>
-	            <p>有点意思的手机音乐播放器</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	
-	
-	<div class="mk-item">
-	    <a href="https://adr.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color3">
-	            <div class="item-logo">
-	                <i class="fa fa-home" aria-hidden="true"></i>
-	            </div>
-	            <h3>ADarkRoom</h3>
-	            <p>你的人生应该浪费在这里...</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	
+	<div class="back1">
+		<div class="mhn-ui-wrap">
 		
-	<div class="mk-item">
-	    <a href="/Aria2NG/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color4">
-	            <div class="item-logo">
-	                <i class="fa fa-download" aria-hidden="true"></i>
-	            </div>
-	            <h3>Aria2NG</h3>
-	            <p>娇小姐的闺房</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
+			<div class="mhn-ui-page page-lock">
+				<div class="mhn-ui-date-time">
+					<div class="mhn-ui-time">6:02 PM</div>
+					<div class="mhn-ui-day">Friday</div>
+					<div class="mhn-ui-date">September 05, 2015</div>
+				</div>
+				<div class="mhn-lock-wrap">
+					<div class="mhn-lock-title" data-title="过来解个锁？"></div>
+					<div class="mhn-lock"></div>
+				</div>
+			</div>
+
+			<div class="mhn-ui-page page-home">
+				<div class="mhn-ui-app-time">&nbsp;</div>
+				<div class="mhn-ui-app-title-head">
+					<span class="mhn-ui-page-title">所有应用</span>
+					<div class="mhn-ui-filter">
+						<span class="mhn-ui-btn ion-funnel"></span>
+						<div class="mhn-ui-filter-list">
+							<div data-filter="all" class="active">所有应用</div>
+							<div data-filter="general">站长工具</div>
+							<div data-filter="social">娱乐类型</div>
+							<div data-filter="credits">实用工具</div>
+						</div>
+					</div>
+				</div>
+				<div class="mhn-ui-row mhn-ui-apps">
+					<div class="mhn-ui-col" data-filter="general">
+						<div class="mhn-ui-icon" data-open="page-author">
+							<span data-color="#2980b9"><img src="https://cdn.jsdelivr.net/npm/cyf/img/6.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">作者信息</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="mhn-ui-col" data-filter="general"><a href="https://picbed.cyfan.top">
+						<div class="mhn-ui-icon" data-open="#">
+							<span data-color="#8e44ad"><img src="https://cdn.jsdelivr.net/npm/cyf/img/2.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">公益图床</div>
+						</div></a>
+					</div>
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://tester.cyfan.top/MagicMusic/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#f39c12"><img src="https://cdn.jsdelivr.net/npm/cyf/img/3.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">免费音乐</div>
+						</div></a>
+					</div>
+					<div class="mhn-ui-col" data-filter="social"><a href="https://adr.cyfan.top/">
+						<div class="mhn-ui-icon" data-open="#">
+							<span data-color="#16a085"><img src="https://cdn.jsdelivr.net/npm/cyf/img/4.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">A Dark Room</div>
+						</div></a>
+					</div>
+					<div class="mhn-ui-col" data-filter="credits">
+						<div class="mhn-ui-icon" data-href="#"><a href="/Aria2NG/">
+							<span data-color="#1e1e1e"><img src="https://cdn.jsdelivr.net/npm/cyf/img/7.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">Aria2NG</div>
+						</div></a>
+					</div>
+					<div class="mhn-ui-col" data-filter="social">
+						<div class="mhn-ui-icon" data-href="#"><a href="https://tools.cyfan.top/td/">
+							<span data-color="#3b5998"><img src="https://cdn.jsdelivr.net/npm/cyf/img/9.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">Tower Defence</div>
+						</div></a>
+					</div>
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://tools.cyfan.top/vipvideo/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#56a3d9"><img src="https://cdn.jsdelivr.net/npm/cyf/img/10.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">解锁VIP视频</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="social"><a href="https://tools.cyfan.top/syf/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/11.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">撕衣服</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="social"><a href="https://tools.cyfan.top/PVZ/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/8.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">PVZ</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="general"><a href="https://tools.cyfan.top/bingpic/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/12.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">Bing每日美图</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="general"><a href="https://tools.cyfan.top/djt/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/13.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">毒鸡汤</div>
+						</div></a>
+					</div>
+					
+					
+					<div class="mhn-ui-col" data-filter="general"><a href="https://tools.cyfan.top/yiyan/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/14.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">一言</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://tools.cyfan.top/%E9%9F%B3%E9%A2%91%E5%8F%AF%E8%A7%86%E5%8C%96/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/15.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">音乐可视化</div>
+						</div></a>
+					</div>
+					
+					
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://tools.cyfan.top/clock/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/16.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">电子钟</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://tools.cyfan.top/tbt/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/17.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">3D元素周期表</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://ps.cyfan.top/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/18.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">PhotoShop</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://md.cyfan.top/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/19.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">MarkDown编辑器</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="social"><a href="https://tools.cyfan.top/mikutap/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/20.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">MikuTap</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="general"><a href="https://tools.cyfan.top/abtt/b2a.html">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/21.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">B2A</div>
+						</div></a>
+					</div>
+					
+					
+					<div class="mhn-ui-col" data-filter="general"><a href="https://gh-proxy.cyfan.top/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/22.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">GithubGo</div>
+						</div></a>
+					</div>
+					
+					<div class="mhn-ui-col" data-filter="social"><a href="https://pixiv.cyfan.top/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/24.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">大陆版本pixiv</div>
+						</div></a>
+					</div>
+					
+					
+					
+					<div class="mhn-ui-col" data-filter="social"><a href="https://magictiles.cyfan.top/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/23.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">钢琴块</div>
+						</div></a>
+					</div>
+					
+					
+					<div class="mhn-ui-col" data-filter="credits"><a href="https://ipfs.cyfan.top/">
+						<div class="mhn-ui-icon" data-href="#">
+							<span data-color="#ec4a89"><img src="https://cdn.jsdelivr.net/npm/cyf/img/1.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">无限网盘</div>
+						</div></a>
+					</div>
+					<div class="mhn-ui-col" data-filter="general">
+						<div class="mhn-ui-icon" data-open="page-credits">
+							<span data-color="#2980b9"><img src="https://cdn.jsdelivr.net/npm/cyf/img/25.png" style="width: 55px;"></span>
+							<div class="mhn-ui-icon-title">外链工具</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="mhn-ui-bottom-link-bar">
+					<span class="mhn-ui-bottom-btn ion-ios-home"></span>
+					<span class="mhn-ui-bottom-btn ion-ios-locked" onclick="mhnUI.page.show('page-lock')"></span>
+				</div>
+			</div>
+
+			<div class="mhn-ui-page page-author">
+				<div class="mhn-ui-app-time"></div>
+				<div class="mhn-ui-app-title-head"><span class="ion-person"></span> Author</div>
+				<div class="text-center"><img class="flipInX animated" src="https://cdn.jsdelivr.net/gh/ChenYFan/CDN/img/avatar.png" alt="" width=20%></div>
+				<p class="text-center">一个在互联网角落挣扎的小站点 / CYF / Live In China</p>
+				<div class="mhn-ui-bottom-link-bar">
+					<span class="mhn-ui-bottom-btn ion-ios-home" onclick="mhnUI.page.show('page-home')"></span>
+					<span class="mhn-ui-bottom-btn ion-ios-locked" onclick="mhnUI.page.show('page-lock')"></span>
+				</div>
+			</div>
+
 	
-		<div class="mk-item">
-	    <a href="/td/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color5">
-	            <div class="item-logo">
-	                <i class="fa fa-delicious" aria-hidden="true"></i>
-	            </div>
-	            <h3>Tower Defence</h3>
-	            <p>又是一款人生游戏</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
+
+			
+			<div class="mhn-ui-page page-credits">
+				<div class="mhn-ui-app-time">&nbsp;</div>
+				<div class="mhn-ui-app-title-head"><span class="ion-information-circled"></span> 外链链接🔗</div>
+				<div class="mhn-ui-credit-list">
+					<div class="mhn-ui-credit">
+						<a href="https://earth.nullschool.net/" target="_blank">https://earth.nullschool.net/</a>
+						<p>全球天气可视化</p>
+					</div>
+					<div class="mhn-ui-credit">
+						<a href="http://bigjpg.com/" target="_blank">http://bigjpg.com/</a>
+						<p>你的图片不够大？</p>
+					</div>
+					<div class="mhn-ui-credit">
+						<a href="http://ip8.speedtestcustom.com" target="_blank">http://ip8.speedtestcustom.com/</a>
+						<p>无广告的SpeedTest</p>
+					</div>
+					<div class="mhn-ui-credit">
+						<a href="https://www.virustotal.com/gui/home/upload" target="_blank">https://www.virustotal.com/gui/home/upload</a>
+						<p>在线杀毒利器</p>
+					</div>
+				</div>
+
+			
+			
+			
+			
+				<div class="mhn-ui-bottom-link-bar">
+					<span class="mhn-ui-bottom-btn ion-ios-home" onclick="mhnUI.page.show('page-home')"></span>
+					<span class="mhn-ui-bottom-btn ion-ios-locked" onclick="mhnUI.page.show('page-lock')"></span>
+				</div>
+			</div>
+			<div class="mhn-ui-dialog-wrap">
+				<div class="mhn-ui-dialog">
+					<div class="mhn-ui-dialog-title">Are you sure?</div>
+					<p>This application wants to open an external link. To confirm, please click on yes button.</p>
+					<a data-action="confirm" class="mhn-ui-dialog-btn" target="_blank">Yes</a>
+					<a data-action="cancel" class="mhn-ui-dialog-btn">No</a>
+				</div>
+			</div>
+		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/cyf/js/jquery-2.1.1.min.js"></script>
+      <script>
+$(document).ready(function(){
+
+var a1 = 32;
+var a2 = 99;   
+
+ $(".back1").css("background","url('https://cdn.jsdelivr.net/npm/chenyfan-happypic@0.0." + Math.floor((Math.random() * a1) + 1) + "/" + Math.floor((Math.random() * a2) + 1) + ".jpg')");
+
+ });
+ </script>
 	
-	<div class="mk-item">
-	    <a href="/vipvideo/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color6">
-	            <div class="item-logo">
-	                <i class="fa fa-toggle-on" aria-hidden="true"></i>
-	            </div>
-	            <h3>VIP视频照样看</h3>
-	            <p>这是给我亲爱的麻麻抄的...</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	<div class="mk-item">
-	    <a href="/syf/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color1">
-	            <div class="item-logo">
-	                <i class="fa fa-scissors" aria-hidden="true"></i>
-	            </div>
-	            <h3>撕衣服</h3>
-	            <p>绅士解压神器<del>撕衣服什么我最喜欢了</del></p>
-			 
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		
-		    <div class="mk-item">
-	    <a href="/PVZ/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color2">
-	            <div class="item-logo">
-	                <i class="fa fa-tree" aria-hidden="true"></i>
-	            </div>
-	            <h3>PVZ1Flash在线版</h3>
-	            <p>这是你的童年回忆吗？</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	<div class="mk-item">
-	    <a href="/bingpic/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color3">
-	            <div class="item-logo">
-	                <i class="fa fa-th-large" aria-hidden="true"></i>
-	            </div>
-	            <h3>Bing每日美图</h3>
-	            <p>以及它们的故事</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	<div class="mk-item">
-	    <a href="/djt/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color4">
-	            <div class="item-logo">
-	                <i class="fa fa-coffee" aria-hidden="true"></i>
-	            </div>
-	            <h3>毒鸡汤</h3>
-	            <p>句句治愈人心</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		<div class="mk-item">
-	    <a href="/yiyan/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color5">
-	            <div class="item-logo">
-	                <i class="fa fa-diamond" aria-hidden="true"></i>
-	            </div>
-	            <h3>一言</h3>
-	            <p>能触动你的心吗？</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    	<div class="mk-item">
-	    <a href="/音频可视化/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color6">
-	            <div class="item-logo">
-	                <i class="fa fa-file-sound-o" aria-hidden="true"></i>
-	            </div>
-	            <h3>音频可视化</h3>
-	            <p>3D方式听音乐</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>		    	
-		    <div class="mk-item">
-	    <a href="/clock/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color1">
-	            <div class="item-logo">
-	                <i class="fa fa-clock-o" aria-hidden="true"></i>
-	            </div>
-	            <h3>电子表</h3>
-	            <p>一款可爱的自带倒计时的表</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    <div class="mk-item">
-	    <a href="/tbt/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color2">
-	            <div class="item-logo">
-	                <i class="fa fa-table" aria-hidden="true"></i>
-	            </div>
-	            <h3>元素周期表</h3>
-	            <p>与众不同的查表方式</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    <div class="mk-item">
-	    <a href="https://ps.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color3">
-	            <div class="item-logo">
-	                <i class="fa fa-pencil-square" aria-hidden="true"></i>
-	            </div>
-	            <h3>PhotoShop</h3>
-	            <p>恐怖如斯的在线修图</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>		    
-		    
-		    <div class="mk-item">
-	    <a href="https://md.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color4">
-	            <div class="item-logo">
-	                <i class="fa fa-text-width" aria-hidden="true"></i>
-	            </div>
-	            <h3>MarkDown编辑器+</h3>
-	            <p>PS:支持运行JS和HTML代码</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		   
-	<div class="mk-item">
-	    <a href="/mikutap/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color5">
-	            <div class="item-logo">
-	                <i class="fa fa-microphone" aria-hidden="true"></i>
-	            </div>
-	            <h3>Mikutap</h3>
-	            <p>听听初音<del>老婆</del>的声音吧</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    
-
-		    	<div class="mk-item">
-	    <a href="/abtt/b2a.html" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color6">
-	            <div class="item-logo">
-	                <i class="fa fa-inbox" aria-hidden="true"></i>
-	            </div>
-	            <h3>B2A</h3>
-	            <p>Give me AV back!</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    <div class="mk-item">
-	    <a href="https://gh-proxy.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color1">
-	            <div class="item-logo">
-	                <i class="fa fa-github" aria-hidden="true"></i>
-	            </div>
-	            <h3>Github,Go!</h3>
-	            <p>国内使用Github的最佳选择</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    <div class="mk-item">
-	    <a href="yenster/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color2">
-	            <div class="item-logo">
-	                <i class="fa fa-google-wallet" aria-hidden="true"></i>
-	            </div>
-	            <h3>Yenster</h3>
-	            <p>Lovely Robot</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		
-		    
-		    <div class="mk-item">
-	    <a href="https://magictiles.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color3">
-	            <div class="item-logo">
-	                <i class="fa fa-microchip" aria-hidden="true"></i>
-	            </div>
-	            <h3>在线钢琴块</h3>
-	            <p>某付费游戏</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    
-		    <div class="mk-item">
-	    <a href="https://pixiv.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color4">
-	            <div class="item-logo">
-	                <i class="fa fa-magic" aria-hidden="true"></i>
-	            </div>
-	            <h3>Pixiv观看</h3>
-	            <p>Pixiv国内能打开吗QAQ</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    
-		    <div class="mk-item">
-	    <a href="https://ipfs.cyfan.top" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color5">
-	            <div class="item-logo">
-	                <i class="fa fa-cloud" aria-hidden="true"></i>
-	            </div>
-	            <h3>无限网盘</h3>
-	            <p>基于IPFS的分布式文件存储</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    
-		    
-		    <div class="mk-item">
-	    <a href="/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color6">
-	            <div class="item-logo">
-	                <i class="fa fa-heart" aria-hidden="true"></i>
-	            </div>
-	            <h3>敬请期待......</h3>
-	            <p>(☆▽☆)</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-		    
-		    
-		    
-		    
-		    </div>
-
-
-
-
-
-
-</section>
-
-	<div class="mk-item-box">
-<a name="Links"></a>
-<h3 class="mk-sub-title">
-    <span>Links</span>
-    <span>/</span>
-    外链工具
-</h3>
-<p class="mk-title-describe">这些均是本站外的好用的工具</p>
-
-	<div class="mk-item">
-	    <a href="https://earth.nullschool.net" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color1">
-	            <div class="item-logo">
-	                <i class="fa fa-globe" aria-hidden="true"></i>
-	            </div>
-	            <h3>全球天气可视化</h3>
-	            <p>一款让你大吃一惊的全球天气仪</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div> 
-	
-<div class="mk-item">
-	    <a href="http://bigjpg.com/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color2">
-	            <div class="item-logo">
-	                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-	            </div>
-	            <h3>Bigjpg</h3>
-	            <p>你的图片不够大？</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-	
-	<div class="mk-item">
-	    <a href="http://ip8.speedtestcustom.com" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color3">
-	            <div class="item-logo">
-	                <i class="fa fa-dashboard" aria-hidden="true"></i>
-	            </div>
-	            <h3>无广告Speedtest</h3>
-	            <p>.net和.cn的广告看着烦?</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div> 
-	
-	
-<div class="mk-item">
-	    <a href="https://www.virustotal.com/gui/home/upload" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color4">
-	            <div class="item-logo">
-	                <i class="fa fa-bug" aria-hidden="true"></i>
-	            </div>
-	            <h3>VirusTotal</h3>
-	            <p>过来，杀杀毒</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-
-
-<div class="mk-item">
-	    <a href="/" target="_blank" se_prerender_url="complete">
-	        <article class="mk-color-item color6">
-	            <div class="item-logo">
-	                <i class="fa fa-heart" aria-hidden="true"></i>
-	            </div>
-	            <h3>敬请期待......</h3>
-	            <p>(☆▽☆)</p>
-	            <i class="light"></i>
-	        </article>
-	    </a>
-	</div>
-
-
-
-
-
-
-</div>
-	
-	
-	
-	
-	
-	
-<section class="section">  <!--  class="section" -->
-    <div class="mk-big-title">
-        <h4>About</h4>
-    </div>
-    
-    <div class="about-content">
-        <p>各种在线工具、稀奇古怪、标准好链这里都有，欢迎在github上提出建议！</p>
-        <!--
-		咳咳，既然你都看到这儿了，那你就应该明白：
-		人要脸树要皮，转载不著就相当于自己把韧皮部扒下来！
-		转载注明一下，谢谢！-->
-        <p>本页面展示部分是使用 <a href="http://lab.mkblog.cn/">孟坤Web实验室</a> 仿 AlloyTeam 的样式。</p>
-        
-    </div>
-</section>
-
-</div>     <!-- class=container -->
-</div>
-<footer class="footer">
-    <div class="social">
-        <a href="https://github.com/chenyfan/" target="_blank" title="Github" mkpop="记得点星">
-            <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-    </div>
-    
-    <div class="count">
-        『想要源码？到GitHub看看吧↑』
-    </div>
-    
-    <div class="web-record">
-        Copyright © 2019-永远 <a href="https://cyfan.top">CYF</a>
-    </div>
-</footer>
-
-<!-- 返回顶部 -->
-<div class="mk-uptop" title="点击返回顶部"></div>
-
-<!-- jq -->
-<script src="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/js/jquery.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/vector.js"></script>
- -->
-<script>
-$(function(){
-    
-    // 页面加载完毕后固定页头高度，防止在某些自动隐藏工具栏的移动浏览器上出现页面抖动现象
-    $(".header").height($(window).height());
-    
-	
-	// 监听滚动变化
-    $(window).scroll(function() {
-        if($(window).scrollTop() < 300) {
-            $(".mk-uptop").removeClass("show");
-        } else {
-            $(".mk-uptop").addClass("show");
-        }
-    });
-    
-    // 返回顶部
-    $(".mk-uptop").click(function(){
-		$("html, body").animate({scrollTop:0}, "normal"); 
-		return false; 
-	});
-	
-});
-
-
-
-</script>
-<script src="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/js/particles.js"></script>
-
-<script>
-
-    particlesJS('bj',
-
-        {
-            "particles": {
-                "number": {
-                    "value": 50,
-                    "density": {
-                        "enable": true,
-                        "value_area": 1000
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 5,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": false,
-                        "mode": "grab"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true,
-            "config_demo": {
-                "hide_card": false,
-                "background_color": "#b61924",
-                "background_image": "",
-                "background_position": "50% 50%",
-                "background_repeat": "no-repeat",
-                "background_size": "cover"
-            }
-        }
-
-    );
-</script>
-<!-- 
-</body></html>
-<!---
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cyf/js/app.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cyf/js/patternLock.js"></script>
+</body>
+</html>
