@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="zh">
 <head>
@@ -15,8 +16,11 @@
 <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ChenYFan/tools@ce52ac4180e4d4be994ea3525a513be0181c8e27/images/logo.svg" color="#222">
 <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf@0.0.2/css/animate.min.css'>
 <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/gh/driftyco/ionicons@2.0.0/css/ionicons.min.css'>
- <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf@0.0.2/css/app.min.css'>
- </head>
+<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf@0.0.4/app.css'>
+<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf@0.0.4/sc.css'>
+<link rel='stylesheet prefetch' href="https://cdn.jsdelivr.net/npm/cyf@0.0.4/input-style.css">
+
+</head>
 <body>
 <div class="back1">
 <div class="mhn-ui-wrap">
@@ -45,11 +49,11 @@
 </div>
 </div>
 </div>
-<div class="mhn-ui-row mhn-ui-apps">
+<div class="mhn-ui-row mhn-ui-apps" style="	overflow: auto; height: 80%;">
 <div class="mhn-ui-col" data-filter="general">
 <div class="mhn-ui-icon" data-open="page-author">
-<span data-color="#2980b9"><img src="https://cdn.jsdelivr.net/npm/cyf@0.0.2/img/6.png" style="width: 55px;"></span>
-<div class="mhn-ui-icon-title">作者信息</div>
+<span data-color="#2980b9"><img src="https://cdn.jsdelivr.net/npm/cyf@0.0.4/set.png" style="width: 55px;"></span>
+<div class="mhn-ui-icon-title">设置</div>
 </div>
 </div>
 <div class="mhn-ui-col" data-filter="general">
@@ -198,9 +202,63 @@
 </div>
 <div class="mhn-ui-page page-author">
 <div class="mhn-ui-app-time"></div>
-<div class="mhn-ui-app-title-head"><span class="ion-person"></span> Author</div>
-<div class="text-center"><img class="flipInX animated" src="https://cdn.jsdelivr.net/gh/ChenYFan/CDN/img/avatar.png" alt="" width=20%></div>
-<p class="text-center">一个在互联网角落挣扎的小站点 / CYF / Live In China</p>
+<div class="mhn-ui-app-title-head">🛠设置</div>
+
+
+
+   <div class="col-3 input-effect">
+		        	<input class="effect-16" type="text" placeholder="" id="k1" onclick="showk1();">
+		            <label>背景图片地址【留空为随机】</label>
+		            <span class="focus-border"></span>
+					
+
+		        </div>
+				<br></br>
+   <div class="col-3 input-effect">
+		        	<input class="effect-16" type="text" placeholder="" id="k2" onclick="showk2();">
+		            <label>锁屏密码</label>
+		            <span class="focus-border"></span>
+					
+
+		        </div>
+<script src="https://cdn.jsdelivr.net/npm/ripplet.js@0.3.0"></script>
+<button type="button" class="default" onpointerdown="ripplet(arguments[0], { color: null, opacity: 1, className: 'rainbow' })" onclick="shit()">保存</button>
+            <style>
+              .rainbow {
+                background-image: linear-gradient(
+                  -45deg,
+                  rgba(255,   0,   0, .3),
+                  rgba(255, 255,   0, .3),
+                  rgba(  0, 255, 255, .2),
+                  rgba(  0,   0, 255, .15),
+                  rgba(255,   0, 255, .2),
+                  rgba(255,   0,   0, .3)
+                );
+
+              }
+			  .default {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100px;
+    height: 80px;
+    margin: 4px 8px 8px 4px;
+    padding: 8px;
+    line-height: 1.4;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+	margin： 0 auto;
+}
+            </style>
 <div class="mhn-ui-bottom-link-bar">
 <span class="mhn-ui-bottom-btn ion-ios-home" onclick="mhnUI.page.show('page-home')"></span>
 <span class="mhn-ui-bottom-btn ion-ios-locked" onclick="mhnUI.page.show('page-lock')"></span>
@@ -208,7 +266,7 @@
 </div>
 <div class="mhn-ui-page page-credits">
 <div class="mhn-ui-app-time">&nbsp;</div>
-<div class="mhn-ui-app-title-head"><span class="ion-information-circled"></span> 外链链接🔗</div>
+<div class="mhn-ui-app-title-head">🖇外链链接</div>
 <div class="mhn-ui-credit-list">
 <div class="mhn-ui-credit">
 <a href="https://earth.nullschool.net/" target="_blank">https://earth.nullschool.net/</a>
@@ -243,16 +301,8 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/cyf@0.0.2/js/jquery-2.1.1.min.js"></script>
-<script>
-$(document).ready(function(){
 
-var a1 = 32;
-var a2 = 99;   
+<script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/cyf@0.0.2/js/patternLock.min.js,gh/ChenYFan/CDN@master/js/tools.cyfan.top.js,npm/cyf@0.0.4/app.min.js,npm/cyf@0.0.6/k.js"></script>
 
- $(".back1").css("background","url('https://cdn.jsdelivr.net/npm/chenyfan-happypic@0.0." + Math.floor((Math.random() * a1) + 1) + "/" + Math.floor((Math.random() * a2) + 1) + ".jpg')");
-
- });
- </script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/cyf@0.0.2/js/patternLock.min.js,gh/ChenYFan/CDN@master/js/tools.cyfan.top.js,npm/cyf@0.0.2/js/app.min.js"></script>
 </body>
 </html>
