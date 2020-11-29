@@ -19,7 +19,7 @@
 <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf@0.0.4/app.css'>
 <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/cyf@0.0.4/sc.css'>
 <link rel='stylesheet prefetch' href="https://cdn.jsdelivr.net/npm/cyf@0.0.4/input-style.css">
-
+<link rel='stylesheet prefetch' href="https://cdn.jsdelivr.net/npm/cyf@0.0.7/SimpleSwitch.css">
 </head>
 <body>
 <div class="back1">
@@ -31,7 +31,7 @@
 <div class="mhn-ui-date">September 05, 2020</div>
 </div>
 <div class="mhn-lock-wrap">
-<div class="mhn-lock-title" data-title="过来解个锁？"></div>
+<div class="mhn-lock-title" data-title="输入手势密码来解锁手机"></div>
 <div class="mhn-lock"></div>
 </div>
 </div>
@@ -221,8 +221,20 @@
 					
 
 		        </div>
+				<br></br><br></br>
+				 <div class="switch-wrapper">
+		            <label>
+		                <input type="checkbox" data-type="simple-switch"
+		                    data-material="true" id="k3">
+		                在开机时自动锁屏
+		            </label>
+		        </div>
+				<script src="https://cdn.jsdelivr.net/npm/cyf@0.0.7/SimpleSwitch.js"></script>
+				<script type="text/javascript">
+            SimpleSwitch.init();
+        </script>
 <script src="https://cdn.jsdelivr.net/npm/ripplet.js@0.3.0"></script>
-<button type="button" class="default" onpointerdown="ripplet(arguments[0], { color: null, opacity: 1, className: 'rainbow' })" onclick="shit()">保存</button>
+<button type="button" class="default" onpointerdown="ripplet(arguments[0], { color: null, opacity: 1, className: 'rainbow' })" onclick="shit()">保存并重启</button>
             <style>
               .rainbow {
                 background-image: linear-gradient(
@@ -300,9 +312,7 @@
 </div>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/cyf@0.0.2/js/jquery-2.1.1.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/cyf@0.0.2/js/patternLock.min.js,gh/ChenYFan/CDN@master/js/tools.cyfan.top.js,npm/cyf@0.0.4/app.min.js,npm/cyf@0.0.6/k.js"></script>
-
+<script src="https://cdn.jsdelivr.net/combine/npm/cyf@0.0.2/js/jquery-2.1.1.min.js,gh/ChenYFan/CDN@master/js/tools.cyfan.top.js,npm/cyf@0.0.7/k.js,npm/cyf@0.0.7/app.js,npm/cyf@0.0.2/js/patternLock.min.js"></script>
 </body>
 </html>
