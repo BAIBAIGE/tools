@@ -202,40 +202,32 @@
 </div>
 <div class="mhn-ui-page page-author">
 <div class="mhn-ui-app-time"></div>
-<div class="mhn-ui-app-title-head">🛠设置</div>
-
-
-
-   <div class="col-3 input-effect">
-		        	<input class="effect-16" type="text" placeholder="" id="k1" onclick="showk1();">
-		            <label>背景图片地址【留空为随机】</label>
-		            <span class="focus-border"></span>
-					
-
-		        </div>
-				<br></br>
-   <div class="col-3 input-effect">
-		        	<input class="effect-16" type="text" placeholder="" id="k2" onclick="showk2();">
-		            <label>锁屏密码</label>
-		            <span class="focus-border"></span>
-					
-
-		        </div>
-				<br></br><br></br>
-				 <div class="switch-wrapper">
-		            <label>
-		                <input type="checkbox" data-type="simple-switch"
-		                    data-material="true" id="k3">
-		                在开机时自动锁屏
-		            </label>
-		        </div>
-				<script src="https://cdn.jsdelivr.net/npm/cyf@0.0.7/SimpleSwitch.js"></script>
-				<script type="text/javascript">
+<div class="mhn-ui-app-title-head">🛠设置<button type="button" class="default" onpointerdown="ripplet(arguments[0], { color: null, opacity: 1, className: 'rainbow' })" onclick="shit()">保存并重启</button></div>
+<div class="col-3 input-effect">
+<input class="effect-16" type="text" placeholder="" id="k1" onclick="showk1();">
+<label>背景图片地址【留空为随机】</label>
+<span class="focus-border"></span>
+</div>
+<br></br>
+<div class="col-3 input-effect">
+<input class="effect-16" type="text" placeholder="" id="k2" onclick="showk2();">
+<label>锁屏密码</label>
+<span class="focus-border"></span>
+</div>
+<br></br><br></br>
+<div class="switch-wrapper">
+<label>
+<input type="checkbox" data-type="simple-switch" data-material="true" id="k3">
+在开机时自动锁屏
+</label>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/cyf@0.0.7/SimpleSwitch.js"></script>
+<script type="text/javascript">
             SimpleSwitch.init();
         </script>
 <script src="https://cdn.jsdelivr.net/npm/ripplet.js@0.3.0"></script>
-<button type="button" class="default" onpointerdown="ripplet(arguments[0], { color: null, opacity: 1, className: 'rainbow' })" onclick="shit()">保存并重启</button>
-            <style>
+
+<style>
               .rainbow {
                 background-image: linear-gradient(
                   -45deg,
@@ -253,10 +245,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 100px;
-    height: 80px;
-    margin: 4px 8px 8px 4px;
-    padding: 8px;
+    padding: 15px;
+    font-size: 16px;
+    margin: 0 15px;
+    background: rgba(0, 0, 0, .4);
     line-height: 1.4;
     font-size: 1.5rem;
     font-weight: 600;
@@ -268,7 +260,6 @@
     border: 1px solid rgba(0, 0, 0, .1);
     text-align: center;
     -webkit-tap-highlight-color: transparent;
-	margin： 0 auto;
 }
             </style>
 <div class="mhn-ui-bottom-link-bar">
@@ -313,7 +304,8 @@
 </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/combine/npm/cyf@0.0.2/js/jquery-2.1.1.min.js,gh/ChenYFan/CDN@master/js/tools.cyfan.top.js,npm/cyf@0.0.7/k.js,npm/cyf@0.0.7/app.js,npm/cyf@0.0.2/js/patternLock.min.js"></script>
-<script>mhnUI.page.show()</script><!--暂时取消锁屏-->
+<script src="https://cdn.jsdelivr.net/combine/npm/cyf@0.0.2/js/jquery-2.1.1.min.js,gh/ChenYFan/CDN@master/js/tools.cyfan.top.js,npm/cyf@0.1.0/k.js,npm/cyf@0.0.7/app.js,npm/cyf@0.0.2/js/patternLock.min.js"></script>
+<!--<script>mhnUI.page.show()</script>-->
+
 </body>
 </html>
