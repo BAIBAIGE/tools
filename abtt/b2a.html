@@ -331,8 +331,7 @@
                         <input id="bvinput" type="text" placeholder="请填写blue video"  value name="bv"/>
                         <input id="avinput" type="text" placeholder="给你变adult video"  value name="av"/>
                         <button type="button" id="login-button">变变变</button><br/><br/>
-                        <a id="tips">欢迎使用b2a！本网页套用官方接口，暂时不会失效。</a>
-						<a id="tips">本界面来自https://hello2020.world/b2a.html</a>
+                        <a id="tips">欢迎使用b2a！本网页套用ClouFlareWorker无服务器接口。</a>
                     </form>
                     
                 </div>
@@ -364,7 +363,7 @@
 
 
     $.ajax({
-      url: 'https://danmu.u2sb.top/api/other/bilibili/queryaid/',
+      url: 'https://api.cyfan.top/bilibili',
       type: 'get',
       dataType: "text",
       crossDomain: true,
